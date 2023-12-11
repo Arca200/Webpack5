@@ -13,5 +13,8 @@
     "start": "vuepress dev docs",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
+  },
+  "dependencies": {
+    "yarn": "^1.22.21"
   }
 }
