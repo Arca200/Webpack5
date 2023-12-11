@@ -8,7 +8,8 @@ module.exports = {
         //文件输出路径
         path: path.resolve(__dirname, 'dist'),
         //输出文件名
-        filename: 'main.js'
+        filename: 'static/js/main.js',
+        clean: true
     },
     //加载器
     module: {
@@ -44,6 +45,25 @@ module.exports = {
                 'css-loader',
                 'stylus-loader'
             ]
+        },
+        {
+            test: /\.(png|jpe?g|gif|webp)$/i,
+            type: 'asset',
+            parser: {
+                dataUrlCondition: {
+                    maxSize: 10 * 1024
+                }
+            },
+            generator: {
+                filename: 'static/image/[hash][ext][query]'
+            }
+        },
+        {
+            test: /.(ttf|mp3|mp4)$/,
+            type: 'asset/resource',
+            generator: {
+                filename: 'static/font/[hash:10][ext][query]'
+            }
         }
         ]
     },
