@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Klee;
+    src: url('../../asset/font/Klee/KleeOne-Regular.ttf');
+}
+
+* {
+    font-family: Klee;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 30px;
+    margin: auto;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background-color: antiquewhite;
+    color: rgb(0, 101, 61);
+}

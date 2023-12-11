@@ -1,4 +1,7 @@
 import count from "./js/count"
 import sum from "./js/sum"
-
-console.log(count(1), sum(1, 2, 3))
+import './css/index.css'
+import './less/index.less'
+import './sass/index.sass'
+import './sass/index.scss'
+import './stylus/index.styl'
